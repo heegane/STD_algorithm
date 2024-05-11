@@ -18,9 +18,9 @@
 - 각자 이름(이니셜 ex. ljr)을 `branch`로 생성하여 파일을 commit 및 PR한다.
 - 커밋 규칙
     - 파일 추가
-        - `add : 220707 boj_1234 Solved`
-        - `add : 220707 boj_1234 Failed`
-        - `add : 220707 programmers_N개의 최소공배수 Solved`
+        - `add : 240510 boj_1234 Solved`
+        - `add : 240510 boj_1234 Failed`
+        - `add : 240510 programmers_N개의 최소공배수 Solved`
     - 파일 수정
         - `fix : 220707 boj_1234 Solved`
     - 플랫폼 이름
@@ -62,3 +62,5 @@
 [fork해서 Pull Request 보내는 법](https://wayhome25.github.io/git/2017/07/08/git-first-pull-request-story/)
 
 [fork된 Repository 최신상태 유지하는 법](https://jybaek.tistory.com/775)
+
+[바킹독의 실전 알고리즘 강의 자료](https://github.com/encrypted-def/basic-algo-lecture)
