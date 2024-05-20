@@ -13,12 +13,11 @@ public class Main {
     String str = br.readLine();
     br.close();
 
-
     // 계수 행렬로 초기화
     int[] countArr = new int[26];
-    for (int i = 0; i < str.length(); i++) {
-      countArr[Integer.valueOf(str.charAt(i)) - 97] += 1; // 아스키 코드 만큼 빼줌 a: 97
-    }
+    //  stream 사용.
+    str.chars()
+        .forEach(c -> countArr[Character.valueOf((char) c) - 97]++);
 
     // Output
     for (int s : countArr) {
