@@ -1,10 +1,11 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class boj10808 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int []arr = new int[26]; // a~z
-        String str = scanner.next();
+        String str = br.readLine();
         for(int i = 0; i < str.length(); i++){
             arr[str.charAt(i) - 'a'] += 1;
         }
@@ -12,7 +13,8 @@ public class boj10808 {
         for(int i = 0; i < arr.length; i++){
             sb.append(arr[i]).append(" ");
         }
-        System.out.println(sb.toString());
-        scanner.close();
+        bw.write(sb.toString());
+        bw.close();
+        br.close();
     }
 }

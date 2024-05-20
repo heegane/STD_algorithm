@@ -1,9 +1,10 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class boj1475 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String str = scanner.next();
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        String str = br.readLine();
         int []arr = new int[9];
         for(int i = 0; i < str.length(); i++){
             int index = str.charAt(i) - '0';
@@ -19,6 +20,8 @@ public class boj1475 {
             if (j > max)
                 max = j;
         }
-        System.out.println(max);
+        bw.write(Integer.toString(max));
+        bw.close();
+        br.close();
     }
 }
