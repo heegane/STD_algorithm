@@ -1,4 +1,4 @@
-// 숫자의_개수_3577
+// 숫자의_개수_2577
 // 숫자 -> 문자 유형 캐스팅 유의할 것.
 
 import java.io.BufferedReader;
@@ -22,13 +22,13 @@ public class Main {
     // 계수 행렬로 초기화
     int[] countArr = new int[10];
     for (char c : str_N) {
-      // 문자 -> 숫자
-
-      //  getNumericValue() 사용
-      countArr[Character.getNumericValue(c)] += 1;
-
-      //  ParseInt() 사용
+      // 문자 -> 숫자 변환 방법.
+      // 1. getNumericValue() 사용
+      //countArr[Character.getNumericValue(c)] += 1;
+      // 2. ParseInt() 사용
       //countArr[Integer.parseInt(String.valueOf(c))] += 1;
+      // 3. ASCII code 사용
+      countArr[(int)c-'0'] += 1;
     }
 
     // Output
