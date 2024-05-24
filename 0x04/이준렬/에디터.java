@@ -1,15 +1,17 @@
 //에디터_1406
-
+// LinkedList 사용
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.ListIterator;
 
-public class arrTest {
+public class Main {
 
   public static void main(String[] args) throws IOException {
     // Input
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    StringBuilder initStr = new StringBuilder(br.readLine());
+    String initialStr = br.readLine();
     int m = Integer.parseInt(br.readLine()); // 입력할 정수의 개수
     String[] cmdList = new String[m];
 
@@ -18,36 +20,45 @@ public class arrTest {
     }
     br.close();
 
-    int cursor = initStr.length();
+    // LinkedList 사용
+    LinkedList<Character> list = new LinkedList<>();
+    for (char c : initialStr.toCharArray()) {
+      list.add(c);
+    }
+
+    ListIterator<Character> iterator = list.listIterator(list.size());
 
     for (String command : cmdList) {
       char cmd = command.charAt(0);
       switch (cmd) {
         case 'L':
-          if (cursor > 0) {
-            cursor--;
+          if (iterator.hasPrevious()) {
+            iterator.previous();
           }
           break;
         case 'D':
-          if (cursor < initStr.length()) {
-            cursor++;
+          if (iterator.hasNext()) {
+            iterator.next();
           }
           break;
         case 'B':
-          if (cursor > 0) {
-            initStr.deleteCharAt(cursor - 1);
-            cursor--;
+          if (iterator.hasPrevious()) {
+            iterator.previous();
+            iterator.remove();
           }
           break;
         case 'P':
           char argument = command.charAt(2); // P 명령어 뒤에 오는 첫 번째 문자
-          initStr.insert(cursor, argument);
-          cursor++;
+          iterator.add(argument);
           break;
       }
     }
 
     // Output
-    System.out.println(initStr.toString());
+    StringBuilder result = new StringBuilder();
+    for (char c : list) {
+      result.append(c);
+    }
+    System.out.println(result.toString());
   }
 }
