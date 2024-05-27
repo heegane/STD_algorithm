@@ -34,12 +34,12 @@ public class Main {
                 case 'B' :
                     if(listIterator.hasPrevious()){
                         listIterator.previous();
-                        list.remove();
+                        listIterator.remove();
                     }
                     break;
                 case 'P' :
                     char ch = command.charAt(2);
-                    list.add(ch);
+                    listIterator.add(ch);
                     break;
             }
         }
