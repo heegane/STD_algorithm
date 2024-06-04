@@ -31,5 +31,7 @@ public class Main {
       sb.append(receivers[i]).append(" ");
     }
     System.out.println(sb.toString());
+
+    br.close();
   }
 }
