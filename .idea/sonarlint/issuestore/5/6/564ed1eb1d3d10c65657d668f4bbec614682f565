@@ -1,0 +1,6 @@
+
+E
+java:S1066#"/Merge this if statement with the enclosing one.(âÀ“
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(œû¿Ø
+@	java:S106"+Replace this use of System.out by a logger.(ûÄÏ
