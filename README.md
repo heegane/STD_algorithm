@@ -4,7 +4,7 @@
 
 ## **📘 스터디 계획**
 
-- 매주 `금` 18시 ~ 19시
+- 매주 `목` 18시 ~ 19시
 - [바킹독 알고리즘 강의](https://www.youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY)를 듣고 난 뒤 연습1, 기본2, 응용 2 문제 풀기.
 - 해당 스터디 저장소를 Fork 한 뒤 그 저장소를 clone.
 
