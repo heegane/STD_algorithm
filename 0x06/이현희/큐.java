@@ -7,20 +7,22 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int n = Integer.parseInt(br.readLine());
-		ArrayDeque<Integer> q = new ArrayDeque<>();
+		Queue<Integer> q = new LinkedList<>();
 		StringBuilder st = new StringBuilder();
+		int last = -1;
 
 		for (int i = 0; i < n; i++) {
 			String[] command = br.readLine().split(" ");
 			switch (command[0]) {
 				case "push":
-					q.add(Integer.parseInt(command[1]));
+					last = Integer.parseInt(command[1]);
+					q.add(last);
 					break;
 				case "pop":
 					if (q.isEmpty()) {
 						st.append("-1\n");
 					} else {
-						st.append(q.pollFirst() + "\n");
+						st.append(q.poll() + "\n");
 					}
 					break;
 				case "size":
@@ -37,14 +39,14 @@ public class Main {
 					if (q.isEmpty()) {
 						st.append("-1\n");
 					} else {
-						st.append(q.peekFirst() + "\n");
+						st.append(q.peek() + "\n");
 					}
 					break;
 				case "back":
 					if (q.isEmpty()) {
 						st.append("-1\n");
 					} else {
-						st.append(q.peekLast() + "\n");
+						st.append(last + "\n");
 					}
 					break;
 			}
