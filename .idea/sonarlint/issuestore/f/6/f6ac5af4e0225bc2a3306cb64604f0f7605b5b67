@@ -1,4 +1,0 @@
-
-”
-java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(ζÿωÿÿÿÿ8…­λ΄ω1J$f596c413-2a90-4042-a886-810501923a88
-m	java:S106"+Replace this use of System.out by a logger.(®υγ‚8­λ΄ω1J$ff15f257-6e6a-454b-b1c5-8a7b2a154b82
