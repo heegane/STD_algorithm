@@ -16,7 +16,7 @@ public class OxO6_Q4 {
     */
     private static int[] dx = { -1, 0, 1, 0 }; // 상, 우, 하, 좌
     private static int[] dy = { 0, 1, 0, -1 }; // 상, 우, 하, 좌
-    // 백준 13300 G4
+    // 백준 3190 G4
     public static void main(String[] args) throws IOException {
 		/*
 		n*n 보드위, 뱀이 보드위 지나가는데 벽 or 자기 자신과 부딫히면 게임 종료 게임이 끝나는 시간 구하기 2<=n<=100,
