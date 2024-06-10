@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.StringTokenizer;
-
 public class OxO6_Q4 {
     /*
     dx : 방향에 따른 x좌표
