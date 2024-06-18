@@ -6,6 +6,7 @@ public class Main {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringBuilder sb = new StringBuilder();
 
         int t = Integer.parseInt(br.readLine());
 
@@ -46,25 +47,26 @@ public class Main {
             }
 
             if (error) {
-                bw.write("error\n");
+                sb.append("error\n");
             } else {
-                bw.write("[");
+                sb.append("[");
                 if (!q.isEmpty()) {
                     if (direction == 'L') {
                         while (q.size() > 1) {
-                            bw.write(q.pollFirst() + ",");
+                            sb.append(q.pollFirst() + ",");
                         }
-                        bw.write(q.pollFirst().toString());
+                        sb.append(q.pollFirst());
                     } else {
                         while (q.size() > 1) {
-                            bw.write(q.pollLast() + ",");
+                            sb.append(q.pollLast() + ",");
                         }
-                        bw.write(q.pollLast().toString());
+                        sb.append(q.pollLast());
                     }
                 }
-                bw.write("]\n");
+                sb.append("]\n");
             }
         }
+        bw.write(sb.toString());
         bw.close();
         br.close();
     }
