@@ -26,14 +26,15 @@ public class Main {
     Deque<Integer> deque = new LinkedList<>();
 
     for (int i = 0; i < N; i++) {
-      if (!deque.isEmpty() && deque.peekLast() < i - L + 1) {
-        deque.removeLast();
-      }
-      while (!deque.isEmpty() && A[deque.peekFirst()] > A[i]) {
+      if (!deque.isEmpty() && deque.peekFirst() < i - L + 1) {
         deque.removeFirst();
       }
-      deque.addFirst(A[i]);
-      sb.append(A[deque.peekLast()]).append(" ");
+      while (!deque.isEmpty() && A[deque.peekLast()] > A[i]) {
+        deque.removeLast();
+      }
+      deque.addLast(i);
+      sb.append(A[deque.peekFirst()]).append(" ");
+
 
 //      System.out.print("Deque 상태 (index): ");
 //      for (int idx : deque) {
