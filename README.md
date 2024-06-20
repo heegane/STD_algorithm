@@ -2,11 +2,29 @@
 
 ---
 
-## **📘 스터디 계획**
+## 🗓️ 스터디 일정
 
-- 매주 `목` 18시 ~ 19시
-- [바킹독 알고리즘 강의](https://www.youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY)를 듣고 난 뒤 연습1, 기본2, 응용 2 문제 풀기.
-- 해당 스터디 저장소를 Fork 한 뒤 그 저장소를 clone.
+- **매주 화요일**: 18:00 ~ 19:00 - 알고리즘 스터디
+- **매주 목요일**: 코드 리뷰 및 TIL 작성 공유
+
+## 🎯 목표
+
+- 바킹독 알고리즘 강의의 `0x11강 - 그리디` 파트까지 완강
+- 매주 **WIL (Week I Learned)** 작성하여 배운 알고리즘 정리
+- 매주 **Github Repository**에 문제 풀이 코드 업로드 및 PR 후 코드 리뷰 후 종합 코드리뷰 작성
+
+## 📚 진행 방식
+
+1. **강의 시청 및 문제 선정**
+    - 매주 모여서 바킹독 알고리즘 강의를 듣고, 다음 주에 풀 **연습 2, 기본 2, 응용 1 문제**를 선정합니다.
+    - 문제는 [워크북](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)에서 선택합니다.
+2. **문제 풀이 및 PR**
+    - 각자 [바킹독 레포지토리](https://github.com/encrypted-def/basic-algo-lecture/tree/master)를 fork하여 자신의 저장소로 가져옵니다.
+    - 선정된 문제 5개를 풀고, 자신의 저장소에 코드 업로드 후 PR을 생성합니다.
+    - 서로의 PR에 대해 [우테코 코드리뷰 가이드](https://github.com/woowacourse/woowacourse-docs/blob/main/reviewer/review-guide.md)를 참고하여 코드 리뷰를 진행합니다.
+3. **TIL 작성 및 공유**
+    - 매주 `목` 학습한 내용을 정리하여 **WIL (Week I Learned)** 형식으로 작성합니다.
+    - 작성한 WIL은 스터디 모임 때 공유하여 서로의 학습 내용을 확인하고 피드백합니다.
 
 ## **📊 문제 정보**
 
