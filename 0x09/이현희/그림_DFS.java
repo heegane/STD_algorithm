@@ -30,7 +30,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (graph[i][j] == 1 && visited[i][j] == 0) {
-                    int size = bfs(i, j, visited);
+                    int size = dfs(i, j, visited);
                     if (bigSize < size) {
                         bigSize = size;
                     }
@@ -44,7 +44,7 @@ public class Main {
         br.close();
     }
 
-    private static int bfs(int x, int y, int[][] visited) {
+    private static int dfs(int x, int y, int[][] visited) {
         Stack<int[]> stack = new Stack<>();
         stack.push(new int[]{x, y});
         int size = 1;
