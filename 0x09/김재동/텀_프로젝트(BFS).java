@@ -70,15 +70,11 @@ public class OxO9_Q5_2 {
                         if(cycle ==true) {
                             count++;
                         }
+                        finished[node] = true;
                     }// while fin
                     return;
                 }
             }
         }// while fin
-
-        // 남은 경로 처리
-        while (!path.isEmpty()) {
-            finished[path.poll()] = true;
-        }
     }
 }
