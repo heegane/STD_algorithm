@@ -16,6 +16,7 @@ public class Ox12_Q5_3 {
     StringBuilder sb = new StringBuilder();
     StringTokenizer st;
 
+
     int t = Integer.parseInt(br.readLine());
     // 테스트 케이스 수 만큼 입력받음
     for(int i = 0 ; i<t; i++) {
