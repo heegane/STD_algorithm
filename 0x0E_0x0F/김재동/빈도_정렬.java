@@ -48,7 +48,6 @@ public class Ox12_Q4_2 {
         sb.append(key + " ");
       }
     }// for fin
-
     System.out.println(sb.toString().trim());
   }
 }
