@@ -37,7 +37,6 @@ public class Ox12_Q2_2 {
       }// for fin
       linecnt++;
     } // while fin
-
     // priQue 안의 값들 sb에 추가
     while(!priQue.isEmpty()) {
       sb.append(priQue.poll()).append("\n");
