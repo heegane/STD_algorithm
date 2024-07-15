@@ -13,7 +13,6 @@ public class Ox12_Q1_1 {
     int n = Integer.parseInt(br.readLine());
     StringBuilder sb = new StringBuilder();
     StringTokenizer st;
-
     // 우선순위 큐 선언
     PriorityQueue<Dot> dotPrQ= new PriorityQueue<>(1, new dotComparator());
     for(int i = 0; i<n; i++) {
