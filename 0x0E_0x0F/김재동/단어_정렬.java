@@ -18,6 +18,7 @@ public class Ox12_Q3_1 {
     Set<String> set = new HashSet<>(); // 중복 단어 제거용 Set
     PriorityQueue<word> prique = new PriorityQueue<>(1, new wordComparator());
 
+
     // 값 입력 부분
     for(int i = 0 ; i<n; i++) {
       String temp = br.readLine();
