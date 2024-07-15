@@ -24,6 +24,7 @@ public class Main {
       System.out.println(arr[i][0] + " " + arr[i][1]);
     }
     System.out.println();
+    br.close();
   }
 
   public static void mergeSort(int[][] arr, int left, int right) {
